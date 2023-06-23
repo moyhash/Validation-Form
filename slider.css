@@ -1,0 +1,250 @@
+
+/* for slider*/
+
+.logo{
+  display: flex;
+  width: 180px;
+  justify-content: space-around;
+  padding: 10px 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(35, 50, 68, 0.911);
+  color: white;
+  margin-bottom: 60px;
+  height: 100px;
+  padding: 6px;
+  line-height: 10px; /* rarnger en meme ligne */
+}
+
+header h2{
+  padding: 10px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  /* width: 200px; */
+}
+header a{
+  padding: 10px 10px;
+  color: rgb(199, 247, 247);
+  text-decoration: none;
+}
+
+.h11 {
+  margin-bottom: 20px;
+}
+
+.imagediv {
+  width: 520px;
+  height: 340px;
+  /* border: 2px solid #6b87f5; */
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.imgslide {
+  width: 520px;  
+  height: 340px;
+  /* display: block; */
+  /* border: 2px solid #e6a53c; */
+  border-radius: 8px;
+  position: absolute;
+  top: 0px;
+}
+#count {
+  z-index: 55;
+  background-color: #53586e;
+  color: rgb(212, 207, 207);
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  /* opacity: 0.6; */
+  top: 5px;
+  left: 5px;
+}
+.btn {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
+}
+
+#prevw, #next {
+  background-color:rgb(71, 98, 199);
+  color: rgb(159, 227, 220);
+  font-size: 15px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn button {
+  all: unset;
+}
+
+.parentnum button {
+  background-color: #c1fede;
+  padding: 3px 6px;
+  color: #2e2f30;
+  font-size: 16px;
+  border-radius: 3px;
+}
+.activ-num{
+  background-color: rgb(71, 98, 199) !important;
+  color: #fff !important;
+}
+.parentnum button:hover {
+  background-color: rgb(71, 98, 199) !important;
+  color: #fff !important;
+}
+
+.parentnum button:active {
+  padding: 4px 9px;
+}
+
+#prevw:hover, #next:hover {
+  background-color:rgb(43, 57, 108);
+}
+
+#prevw:disabled, #next:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+#next:active{
+  transform: translateX(4px);
+}
+#prevw:active{
+  transform: translateX(-4px);
+}
+/*////////////////////////////////////////////////////////////*/
+
+/*for Tabs*/
+.alltabbtn{
+  width: 400px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#tabcontainer{
+  padding-bottom: 50px;
+}
+
+.mybtn{
+  all: unset; /* button par default */
+  background-color: #cecfd2;
+  width: 90px;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  line-height: 1.5;
+  transition: all 0.5s;
+}
+.mybtn:hover{
+  background-color: #75a1e3fa;
+  color: #fff;
+  
+}
+.mybtn:active{
+  padding: 6px 13px;
+  /* font-weight: 600; */
+}
+
+.activebtn{
+  background-color:#75a1e3fa;
+  color: #fff;
+  padding: 5px 14px;
+}
+
+.article h2{
+  color: rgb(70, 95, 152);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.article ol{
+  /* border: 2px solid red; */
+  color: #53586e;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 28px;
+  padding: 2px 20px;
+}
+
+.article1 {
+  opacity: 1 !important; 
+  z-index: 3;
+}
+
+/* ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+  Artilcle Position 
+  1.0 the parent element must have a height:
+  1.1 the parent element must be relative
+
+  TO CENTER 
+  Methode: 1
+  in the parent element set these properties
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+
+  Methode: 2
+  in childreen element set these properties
+    left: 0;
+    right: 0;
+
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤ */
+.parent-articles{
+  /* width: 700px; */
+  height: 240px;
+  position: relative; 
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+
+@media(max-width: 650px){
+  .parent-articles{
+    height: 300px;
+  }
+ }
+
+.article{
+  opacity: 0;
+  position: absolute;
+  transition: all 0.6s;
+  left: 0;
+  right: 0; 
+}
+
+
+/*¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+/* ol automatic counter*/
+ol li {
+  list-style: none;
+}
+ol{
+  counter-reset: plusome;
+}
+ol li::before{
+  counter-increment: plusome;
+  content: counter(plusome);
+  background-color: #ba486a;
+  color: #fff;
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  box-shadow: 0 7px 93px 0 rgb(50, 74, 105);
+}

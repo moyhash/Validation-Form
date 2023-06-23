@@ -1,0 +1,64 @@
+<!-- https://www.youtube.com/watch?v=XNfjllWaP1I -->
+<!-- https://icomoon.io/app/#/select -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="icomoon/style.css">
+  <link rel="stylesheet" href="register.css">
+  <title> Login page Komoriaweb</title>
+  <script defer src="js/register.js"></script>
+</head>
+
+<body>
+ <button id="showRegister">display</button>
+  <div id="parentId" class="parent">
+    <form id="formzoom" action="/">
+      <div class="container">
+        <div class="close-parent">
+          <h1 class="title1">Register</h1>
+          <div id="close1">&#10006;</div>
+        </div>
+        <!-- <p>Please fill in this form to create an account.</p> -->
+        <!-- <hr> -->
+        <div class="papa">
+          <label for="username"><b>UserName</b></label>
+          <input id="userName" type="text" placeholder="Username" required>
+          <div id="usericon" class="icon-check-circle"></div>
+          <p id="usermessage" class="message">usesr name must be > 6 caractere</p>
+        </div>
+
+        <div class="papa">
+          <label for="email"><b>Your email</b></label>
+          <input id="userEmail" type="email" placeholder="Enter Email" id="email" required>
+          <div id="emailIcon" class="icon-check-circle"></div>
+          <p id="mailmessage" class="message">this is not a correct email</p>
+        </div>
+
+        <div class="papa">
+          <label for="psw"><b>Password</b></label>
+          <input id="userPass" type="password" placeholder="Enter Password" id="psw" required>
+          <div id="passIcon" class="icon-check-circle"></div>
+          <p id="passMessage" class="message">password must be letter with 0/9 & {$/@} </p>
+        </div>
+
+        <div class="papa">
+          <label for="psw-repeat"><b>Password</b></label>
+          <input id="rePasswd" type="password" placeholder="Repeat Password" id="psw-repeat" required>
+          <div id="repassIcon" class="icon-check-circle"></div>
+          <p id="repassMessage" class="message">password not correct</p>
+        </div>
+        <!-- <hr> -->
+        <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+
+        <button id="register" disabled class="registerbtn">Register</button>
+        <p class="tosign">Already have an account? <a href="#">Sign in</a>.</p>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

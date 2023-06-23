@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Accordion</title>
+    <link rel="icon" type="image/x-icon" href="images/insta.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="register.css" />
+    <script defer src="js/script.js"></script>
+    <script defer src="js/register.js"></script>
+  </head>
+
+  <body>
+    <header class="myheader">
+      <a href="index.html">
+        <div class="logo">
+          <img src="images/insta.png" width="80px" height="40px">
+          <h2 ><sub>www.</sub>Komoria<sup>Web.com</sup></h2>
+        </div></a>
+      <nav>
+        <ul class="parent1">
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="slider.html">Sliders</a></li>
+          <li class="mode">Change Mode</li>
+          <li id="registerId">Registration</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1>Javascript Accordion</h1>
+      <div class="bigacordion">
+        <div class="child1">
+          <div class="title2">
+            <h3 class="q1">What is HTML ?</h3>
+            <div class="plus">+</div>
+          </div>
+          <p id="para1" class="content">
+            1. HTML signifie « HyperText Markup Language » qu'on peut traduire par
+            « langage de balises pour l'hypertexte ». Il est utilisé afin de
+            créer et de représenter le contenu d'une page web et sa structure.
+            D'autres technologies sont utilisées avec HTML pour décrire la présentation d'une page (CSS) 
+            et/ou ses fonctionnalités interactives (JavaScript).
+          </p>
+        </div>
+
+        <!--  -->
+        <div class="child2">
+          <div class="title2">
+            <h3 class="q2">What is CSS ?</h3>
+            <div class="plus">+</div>
+          </div>
+          <p class="content">
+            2. CSS est l'un des langages principaux du Web ouvert et a été standardisé par le W3C. 
+            Ce standard évolue sous forme de niveaux (levels), 
+            CSS1 est désormais considéré comme obsolète, CSS2.1 correspond à la recommandation et CSS3, 
+            qui est découpé en modules plus petits, est en voie de standardisation.
+          </p>
+        </div>
+        <!--  -->
+
+        <div class="child3">
+          <div class="title2">
+            <h3 class="q3">What is Javascript ?</h3>
+            <div class="plus">+</div>
+          </div>
+          <p class="content">
+            3. JavaScript (souvent abrégé en « JS ») est un langage de script léger, orienté objet, 
+            principalement connu comme le langage de script des pages web. 
+            Mais il est aussi utilisé dans de nombreux environnements extérieurs aux navigateurs web 
+            tels que Node.js, Apache CouchDB. Le code JavaScript est interprété ou compilé à la volée (JIT).
+            C'est un langage à objets utilisant le concept de prototype, disposant d'un typage faible 
+            et dynamique qui permet de programmer suivant plusieurs paradigmes de programmation: 
+            fonctionnelle, impérative et orientée objet. Apprenez-en plus sur JavaScript.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Registration -->
+  <section>
+      <div id="parentId" class="parent">
+        <form id="formzoom" action="/">
+          <div class="container">
+            <div class="close-parent">
+              <p class="title1">Register</p>
+              <div id="close1">&#10006;</div>
+            </div>
+        
+            <div class="papa">
+              <label for="username"><b>UserName</b></label>
+              <input id="userName" type="text" placeholder="Username" required>
+              <div id="usericon" class="icon-check-circle"></div>
+              <p id="usermessage" class="message">usesr name must be > 6 caractere</p>
+            </div>
+    
+            <div class="papa">
+              <label for="email"><b>Your email</b></label>
+              <input id="userEmail" type="email" placeholder="Enter Email" id="email" required>
+              <div id="emailIcon" class="icon-check-circle"></div>
+              <p id="mailmessage" class="message">this is not a correct email</p>
+            </div>
+    
+            <div class="papa">
+              <label for="psw"><b>Password</b></label>
+              <input id="userPass" type="password" placeholder="Enter Password" id="psw" required>
+              <div id="passIcon" class="icon-check-circle"></div>
+              <p id="passMessage" class="message">password must be letter with 0/9 & {$/@} </p>
+            </div>
+    
+            <div class="papa">
+              <label for="psw-repeat"><b>Password</b></label>
+              <input id="rePasswd" type="password" placeholder="Repeat Password" id="psw-repeat" required>
+              <div id="repassIcon" class="icon-check-circle"></div>
+              <p id="repassMessage" class="message">password not correct</p>
+            </div>
+            
+            <button id="register" disabled class="registerbtn">Register</button>
+            <p class="tosign">Already have an account? <a href="#">Sign in</a>.</p>
+          </div>
+        </form>
+    </section> 
+
+    <footer>
+      <a href="">About Me</a><br />
+      <a href="">Youtude</a><br />
+      <a href="">youtude</a><br />
+      <a href="">youtude</a>
+      <h4 class="design">Designed by Djoumoi Hassan &copy; 2023</h4>
+    </footer>
+  </body>
+</html>

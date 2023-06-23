@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Javascript Sliders</title>
+  <link rel="icon" type="image/x-icon" href="images/insta.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="slider.css" />
+  <script defer src="js/slider.js"></script>
+  <script defer src="js/toggle-tab.js"></script>
+</head>
+
+<body>
+  <header class="myheader">
+    <a href="index.html">
+      <div class="logo">
+        <img src="images/insta.png" width="80px" height="40px">
+        <h2>KomoriaWeb<sup>com</sup></h2>
+      </div></a>
+    <nav>
+      <ul class="parent1">
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="slider.html">Sliders</a></li>
+        <li class="mode">Change Mode</li>
+        <li><a href="register.html">Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section>
+      <h1 class="h11">Javascript Sliders</h1>
+      <div id="show" class="imagediv">
+        <!-- Here Photo Slider -->
+      </div>
+      <div class="btn">
+        <button id="prevw">&lt;&lt; prev</button>
+        <div class="parentnum">
+          <button class="myNumber activ-num">1</button>
+          <button class="myNumber">2</button>
+          <button class="myNumber">3</button>
+          <button class="myNumber">4</button>
+          <button class="myNumber">5</button>
+          <button class="myNumber">6</button>
+        </div>
+        <button id="next">next &gt;&gt;</button>
+      </div>
+    </section>
+
+    <section id="tabcontainer">
+      <h1 class="h11">Toggle Tabs</h1>
+      <div class="alltabbtn">
+        <button class="mybtn activebtn" >France</button>
+        <button class="mybtn">Comores</button>
+        <button class="mybtn">Egypt</button>
+      </div>
+
+     <div class="parent-articles">   <!-- pour position absolute  -->
+        <article class="article article1">
+          <h2>Les bonnes raisons pour visiter la France</h2>
+
+          <ol>
+            <li>La France, pays de l'Europe occidentale</li>
+            <li>La France est célèbre pour ses maisons de mode</li>
+            <li>Les musées d'art classique, dont celui du Louvre</li>
+            <li>Le théât de Lyon et l'immense château de Versailles</li>
+            <li>En terme de loisirs, la France offre une large gamme de structures</li>
+          </ol>
+        </article>
+
+        <article class="article ">
+          <h2>Les bonnes raisons pour visiter les Comoros</h2>
+
+          <ol>
+            <li>L'accueil chaleueux des Comoriens </li>
+            <li>La nature bordées des plages et des cocotiers, les fruits exotiques</li>
+            <li>Les pique-nique du udimanche</li>
+            <li>La beauté des fonds marins</li>
+            <li>Les Comores pays d'un peuple pacifique</li>
+            <li>Les Comores pays d'une culture riche et diversifiée</li>
+          </ol>
+        </article>
+
+        <article class="article ">
+          <h2>Les bonnes raisons pour visiter Egypt</h2>
+
+          <ol>
+            <li>Découvrir les nombreux mystères de l'Égypte antique</li>
+            <li>Plonger en mer rouge et faire une croisière sur le Nil</li>
+            <li>Découvr la richesse des sites archéologiques Égyptienne</li>
+            <li>Les Égyptiens sont un peuple chaleureux et accueillant</li>
+            <li>Arpenter l'un des plus grands souks du Moyen-Orient</li>
+          </ol>
+        </article>
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+    <a href="">About Me</a><br />
+    <a href="">Youtude</a><br />
+    <a href="">youtude</a><br />
+    <a href="">youtude</a>
+    <h4 class="design">Designed by Djoumoi Hassan &copy; 2023</h4>
+  </footer>
+</body>
+
+</html>
